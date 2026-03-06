@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página de contacto de Juan José Raygoza Ortega.">
+  <meta name="author" content="Juan José Raygoza Ortega">
+  <title>Contacto | Juan José Raygoza Ortega</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<header class="site-header">
+  <div class="container navbar">
+    <div class="brand">Juan José Raygoza Ortega</div>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-links">
+        <li><a href="index.html" class="">Inicio</a></li>
+        <li><a href="portafolio.html" class="">Portafolio</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Contacto</h1>
+      <p>Espacio para recibir consultas, propuestas de proyecto, oportunidades académicas o mensajes relacionados con programación y desarrollo web.</p>
+    </section>
+
+    <div class="grid-2">
+      <section class="card" aria-labelledby="formulario-contacto">
+        <h2 id="formulario-contacto">Formulario de contacto</h2>
+        <form action="#" method="post">
+          <div class="form-grid">
+            <div>
+              <label for="nombre">Nombre completo <span class="required">*</span></label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre completo">
+            </div>
+            <div>
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+            </div>
+            <div>
+              <label for="telefono">Teléfono <span class="required">*</span></label>
+              <input type="tel" id="telefono" name="telefono" required placeholder="+52 33 0000 0000">
+            </div>
+            <div>
+              <label for="asunto">Asunto <span class="required">*</span></label>
+              <select id="asunto" name="asunto" required>
+                <option value="">Selecciona una opción</option>
+                <option>Consulta</option>
+                <option>Proyecto</option>
+                <option>Trabajo</option>
+                <option>Otro</option>
+              </select>
+            </div>
+          </div>
+          <div style="margin-top:1rem;">
+            <label for="mensaje">Mensaje <span class="required">*</span></label>
+            <textarea id="mensaje" name="mensaje" required placeholder="Escribe aquí tu mensaje"></textarea>
+          </div>
+          <div class="checkbox-row">
+            <input type="checkbox" id="politicas" name="politicas" required>
+            <label for="politicas" style="margin:0;">Acepto las políticas de contacto <span class="required">*</span></label>
+          </div>
+          <p style="margin-top:1rem;">
+            <button type="submit">Enviar</button>
+          </p>
+        </form>
+      </section>
+
+      <aside class="card" aria-labelledby="info-contacto">
+        <h2 id="info-contacto">Información de contacto</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Método de contacto</th>
+              <th>Detalle</th>
+              <th>Horario</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Email</td>
+              <td>juanr1234lol@gmail.com</td>
+              <td>24/7</td>
+            </tr>
+            <tr>
+              <td>Teléfono</td>
+              <td>3310123733</td>
+              <td>12:00 - 22:00</td>
+            </tr>
+            <tr>
+              <td>Oficina</td>
+              <td>UNIVA / Tepeyac</td>
+              <td>Solo con cita</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <section class="map-card" aria-labelledby="mapa-ficticio" style="margin-top:1.2rem;">
+          <h3 id="mapa-ficticio">Mapa de ubicación ficticio</h3>
+          <img src="imagenes/mapa.svg" alt="Mapa de ubicación ficticio con referencia a UNIVA Tepeyac">
+        </section>
+      </aside>
+    </div>
+  </main>
+  
+<footer class="site-footer">
+  <div class="container footer-content">
+    <p><strong>Juan José Raygoza Ortega</strong> · Bachillerato Técnico en Programación · UNIVA</p>
+    <div class="footer-links">
+      <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <p>© 2026 Juan José Raygoza Ortega</p>
+  </div>
+</footer>
+
+</body>
+</html>
