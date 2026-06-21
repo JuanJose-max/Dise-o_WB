@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página de contacto para solicitar proyectos y colaboración profesional.">
+  <meta name="author" content="Juan José Raygoza Ortega">
+  <title>Contacto | Juan José Raygoza Ortega</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contacto</h1>
+
+    <section aria-labelledby="formulario-title">
+      <h2 id="formulario-title">Formulario de contacto</h2>
+      <form action="#" method="post">
+        <p><strong>* Campos obligatorios</strong></p>
+
+        <label for="nombre">Nombre completo <span aria-hidden="true">*</span></label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+
+        <label for="email">Email <span aria-hidden="true">*</span></label>
+        <input type="email" id="email" name="email" required placeholder="ejemplo@email.com">
+
+        <label for="telefono">Teléfono <span aria-hidden="true">*</span></label>
+        <input type="tel" id="telefono" name="telefono" required placeholder="+52 33 0000 0000">
+
+        <label for="asunto">Asunto <span aria-hidden="true">*</span></label>
+        <select id="asunto" name="asunto" required>
+          <option value="">Selecciona una opción</option>
+          <option value="consulta">Consulta</option>
+          <option value="proyecto">Proyecto</option>
+          <option value="trabajo">Trabajo</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <label for="mensaje">Mensaje <span aria-hidden="true">*</span></label>
+        <textarea id="mensaje" name="mensaje" rows="6" required placeholder="Cuéntame sobre tu necesidad o idea."></textarea>
+
+        <label class="inline-control" for="politicas">
+          <input type="checkbox" id="politicas" name="politicas" required>
+          Acepto las políticas de privacidad <span aria-hidden="true">*</span>
+        </label>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="tabla-contacto-title">
+      <h2 id="tabla-contacto-title">Información de contacto</h2>
+      <table>
+        <caption>Métodos y horarios de atención</caption>
+        <thead>
+          <tr>
+            <th scope="col">Método de contacto</th>
+            <th scope="col">Detalle</th>
+            <th scope="col">Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Email</td>
+            <td>ejemplo@email.com</td>
+            <td>24/7</td>
+          </tr>
+          <tr>
+            <td>Teléfono</td>
+            <td>+XX XXX XXX XXX</td>
+            <td>9am-6pm</td>
+          </tr>
+          <tr>
+            <td>Oficina</td>
+            <td>Dirección ficticia</td>
+            <td>Solo con cita</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="mapa-title">
+      <h2 id="mapa-title">Ubicación referencial</h2>
+      <figure>
+        <img src="https://picsum.photos/id/1011/900/350" alt="Mapa de ubicación ficticio de oficina" width="900" height="350">
+        <figcaption>Mapa ilustrativo como referencia de ubicación.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Juan José Raygoza Ortega. Todos los derechos reservados.</p>
+    <p>
+      <a href="#">Instagram</a> ·
+      <a href="#">Facebook</a> ·
+      <a href="#">X/Twitter</a>
+    </p>
+    <p><a href="index.html">Volver al inicio</a></p>
+  </footer>
+</body>
+</html>
